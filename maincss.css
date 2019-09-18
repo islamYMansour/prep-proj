@@ -1,0 +1,57 @@
+.mainsection{
+
+}
+body{
+	display: flex;
+	align-items: center;
+	background-color: #044;
+	justify-content:center;
+
+}
+h2,h1{
+	width: 100%;
+	text-align: center;
+	color:  white;
+}
+.section1{
+	width: 500px;
+	min-height: 600px;
+	background-color: #fff;
+	border-radius:4px;
+
+}
+.inputItem{
+	text-align: center;
+}
+input[type =text]{
+	width: 90%;
+	padding:12px 20px;
+	margin: 30px 0;
+	border: 8px solid #044
+	border-radius:4px;
+	box-sizing: border-box;
+	font-size: 20px
+
+}
+
+button{
+	width: 50%;
+
+	padding:14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius:4px;
+	color: white;
+	background: #044;
+	font-size: 20px;
+	cursor:pointer;
+
+}
+button:hover{
+	background-color: red;
+}
+
+li{
+	font-size: 20px;
+	font-style: bold;
+}
