@@ -1,35 +1,44 @@
 
 var myList = createToDoList();
+var listElement = $("#list")
+var listItems = $('#list li');
 function createToDoList() {
 	var result = {}
 
 	result.list =[]
-	result.checked = makeChecked
-	result.unChecked = makeUnChecked
 	result.add = addToList
 	
 	return result
 }
 
 function addToList() {
-	var input =$("text:input1").val()
-	console.log(input)
-	$('#list').append(
-    $('<li>').append(
+	var input =$("#input1").val()
+		if(input !== "") {
+		$('#list').append(
+   	 $('<li>').append(
         $('<a>').attr('text',input).append(
-            $('<span>').attr('class', 'check').append(input)
-)));   
-$("input1").val("")
+            $('<div>').attr('class', 'unCheck').append(input)
+	)));   
+	$("#input1").val("")
+	}
 }
+
 $("#addtask").click(function(){
-myList.add();;
+myList.add();
 })
 
-function makeChecked(item) {
 
 
-}
+$("#list").click(function(ev) {
+	if($(ev.target).hasClass('check')){
+		$(ev.target).removeClass('check')
+		$(ev.target).addClass('unCheck')
+		console.log(ev.target)
+		console.log(listItems)
+	} else {
+		$(ev.target).removeClass('unCheck')
+		$(ev.target).addClass('check')
+	}
+	
+})
 
-function makeUnChecked(item){
-
-}
