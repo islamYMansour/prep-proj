@@ -1,5 +1,5 @@
 
-
+var myList = createToDoList();
 function createToDoList() {
 	var result = {}
 
@@ -11,12 +11,22 @@ function createToDoList() {
 	return result
 }
 
-function addToList(item) {
-	this.list.push(item)
-
+function addToList() {
+	var input =$("text:input1").val()
+	console.log(input)
+	$('#list').append(
+    $('<li>').append(
+        $('<a>').attr('text',input).append(
+            $('<span>').attr('class', 'check').append(input)
+)));   
+$("input1").val("")
 }
+$("#addtask").click(function(){
+myList.add();;
+})
 
 function makeChecked(item) {
+
 
 }
 
