@@ -15,11 +15,13 @@ function addToList() {
 	var input =$("#input1").val()
 		if(input !== "") {
 		$('#list').append(
-   	 $('<li>').append(
+   	 	$('<li>').append(
         $('<a>').attr('text',input).append(
-            $('<div>').attr('class', 'unCheck').append(input)
-	)));   
-	$("#input1").val("")
+        $('<span>').attr('class', 'unCheck').append(input)),
+        $('<button>')
+        .attr('background-color','red')));   
+		$("#input1").val("")
+
 	}
 }
 
@@ -35,6 +37,7 @@ $("#list").click(function(ev) {
 		$(ev.target).addClass('unCheck')
 		console.log(ev.target)
 		console.log(listItems)
+
 	} else {
 		$(ev.target).removeClass('unCheck')
 		$(ev.target).addClass('check')

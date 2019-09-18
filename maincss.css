@@ -4,9 +4,11 @@
 body{
 	display: flex;
 	align-items: center;
-	background-color: #044;
 	justify-content:center;
-
+	background-image: url("calc.png");
+	background-repeat:no-repeat;
+ 	background-size: cover;
+ 	background-color: #044
 }
 h2,h1{
 	font-family: cursive, sans-serif;
@@ -42,7 +44,7 @@ text-decoration: line-through;
 .unCheck{
 }
 
-button{
+#addtask{
 	width: 50%;
 	padding:14px 20px;
 	margin: 8px 0;
@@ -54,16 +56,24 @@ button{
 	cursor:pointer;
 
 }
+
+.trash-btn{
+	 background-color: #4CAF50;
+
+/*background-image: url(icons8-trash-24.png);*/
+}
+
 li:hover{
 	background-color: yellow;
 
 }
-button:hover{
-	background-color: #008080
-;
+#addtask:hover{
+	 background-color: #4CAF50;
+
 }
 
 li{
+	list-style-image: url(icons8-checkmark-24.png);
 	font-size: 30px;
 	font-style: bold;
 }
