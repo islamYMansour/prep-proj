@@ -17,9 +17,7 @@ function addToList() {
 		$('#list').append(
    	 	$('<li>').append(
         $('<a>').attr('text',input).append(
-        $('<span>').attr('class', 'unCheck').append(input)),
-        $('<button>')
-        .attr('background-color','red')));   
+        $('<span>').attr('class', 'unCheck').append(input))));   
 		$("#input1").val("")
 
 	}
