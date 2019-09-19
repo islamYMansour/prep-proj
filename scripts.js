@@ -45,6 +45,9 @@ $("#list").click(function(ev) {
 		$(ev.target).addClass('check')
 	}
 	}
+
+	
+	
 })
 
 function getDate() {
