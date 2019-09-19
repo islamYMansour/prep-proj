@@ -21,7 +21,7 @@ function addToList() {
 		$('#list').append(
    	 	$('<li>').append(
         $('<a>').attr('text',input).append(
-        $('<span>').attr('class', 'unCheck').append(input))));   
+        $('<div>').attr('class', 'unCheck').append(input))));   
 		$("#input1").val("")
 
 	}
@@ -34,17 +34,17 @@ myList.add();
 
 
 $("#list").click(function(ev) {
+	if(event.target.tagName.toLowerCase() === "div") {
 	if($(ev.target).hasClass('check')){
 		$(ev.target).removeClass('check')
 		$(ev.target).addClass('unCheck')
 		console.log(ev.target)
 		console.log(listItems)
-
 	} else {
 		$(ev.target).removeClass('unCheck')
 		$(ev.target).addClass('check')
 	}
-	
+	}
 })
 
 function getDate() {
