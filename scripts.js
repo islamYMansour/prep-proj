@@ -64,6 +64,7 @@ function getTime () {
 	return result
 }
 	$('#dateID').text(myList.date())
+	$('#timeID').text(myList.time())
 
 setInterval(function() { 
 	console.log(myList.time())
@@ -74,3 +75,5 @@ setInterval(function() {
 $('#reset').click(function() {
 	myList.reset()
 })
+
+

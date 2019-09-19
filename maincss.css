@@ -8,10 +8,19 @@ body{
 	background-image: url("calc.png");
 	background-repeat:no-repeat;
  	background-size: cover;
- 	background-color: #044
+ 	background-color: #044;
+ 	font-family: Comic Sans MS;
+
 }
-h2,h1{
-	font-family: cursive, sans-serif;
+h2{	font-family: Comic Sans MS;
+	width: 100%;
+	text-align: center;
+	color:  white;}
+
+
+h1{
+	font-size: 50px;
+	font-family: Comic Sans MS;
 	width: 100%;
 	text-align: center;
 	color:  white;
@@ -25,6 +34,8 @@ h2,h1{
 }
 .inputItem{
 	text-align: center;
+	background-color: #d2fcf2;
+	padding:20px;
 }
 input[type =text]{
 	width: 90%;
@@ -64,11 +75,11 @@ text-decoration: line-through;
 }
 
 li:hover{
-	background-color: yellow;
+	background-color: #7bdbc3;
 
 }
 #addtask:hover{
-	 background-color: #4CAF50;
+	 background-color: #7bdbc3;
 
 }
 
@@ -96,8 +107,22 @@ li{
 }
 
 #dateID {
-	  text-shadow: 1px 2px blue;
-	  font-size: 30px;
-	  color: white;
+/*	  text-shadow: 1px 2px blue;
+*/	font-size: 20px;
+	color: red;
+	float: left;
+	color: #2a7bad;
+	padding: 4px;
+	font-family: Comic Sans MS;
 
 }
+
+#timeID {	  
+	float: right;
+	font-size: 20px;
+	color: #2a7bad;
+	padding: 4px;
+	font-family: Comic Sans MS;
+
+}
+
