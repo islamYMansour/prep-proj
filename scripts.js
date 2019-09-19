@@ -42,6 +42,8 @@ $("#list").click(function(ev) {
 		$(ev.target).removeClass('unCheck')
 		$(ev.target).addClass('check')
 	}
+
+	
 	
 })
 
